@@ -6,5 +6,11 @@ function updatePlaylist(obj, artist, title){
 }
 
 function removeFromPlaylist(obj, artist){
-  delete 
+  delete obj.artist;
+  return obj;
 }
+
+updatePlaylist(playlist, "taylor", "Shake it up");
+removeFromPlaylist(playlist, elvis);
+
+console.log(playlist);
